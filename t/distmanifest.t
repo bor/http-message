@@ -7,5 +7,5 @@ BEGIN {
         unless -d '.git' || $ENV{AUTHOR_TESTING};
 }
 
-use Test::DistManifest;
-manifest_ok();
+require Test::DistManifest;
+Test::DistManifest::manifest_ok();
